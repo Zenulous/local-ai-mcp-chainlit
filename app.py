@@ -26,13 +26,13 @@ async def start():
         [
             {
                 "role": "system",
-                "content": "You are a helpful AI assistant running locally via LM Studio. You can access Obsidian notes using the Obsidian MCP server.",
+                "content": "You are a helpful AI assistant running locally via LM Studio. You can access tools using MCP servers.",
             }
         ],
     )
 
     await cl.Message(
-        content="Welcome! I'm using a local model running in LM Studio with Obsidian integration. Make sure that: \n"
+        content="Welcome! I'm using a local model running in LM Studio with MCP integration. Make sure that: \n"
         "1. LM Studio is running \n"
         "2. A default model is loaded \n"
         "3. The LM Studio server has started \n"
@@ -286,4 +286,4 @@ async def on_message(message: cl.Message):
 
 
 if __name__ == "__main__":
-    print("Starting Chainlit app with LM Studio and Obsidian MCP integration...")
+    print("Starting Chainlit app with LM Studio and MCP integration...")
